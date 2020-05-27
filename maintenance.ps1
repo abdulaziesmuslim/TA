@@ -13,7 +13,7 @@ function Send-ToEmail([string]$email, [string]$attachmentpath){
     $message.Attachments.Add($attachment);
 
     $smtp = new-object Net.Mail.SmtpClient("smtp.gmail.com", "587");
-    $smtp.EnableSSL = $False;
+    $smtp.EnableSSL = $TRUE;
     $smtp.Credentials = New-Object System.Net.NetworkCredential($Username, $Password);
     $smtp.Send($message);
     write-host "Mail Sent" ; 
